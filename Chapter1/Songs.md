@@ -184,3 +184,8 @@ FP에서 모듈화는 단일성의 원리와 밀접한 관련
 - 옵저버블(관찰 가능) 이라는 중요한 장치를 매개로 움직임
 
 
+---
+
+### 문제
+
+[Pure Functions / Currying](https://www.codingame.com/playgrounds/2980/practical-introduction-to-functional-programming-with-js/pure-functions)
