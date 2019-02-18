@@ -188,4 +188,4 @@ FP에서 모듈화는 단일성의 원리와 밀접한 관련
 
 ### 문제
 
-[Pure Functions / Currying](https://www.codingame.com/playgrounds/2980/practical-introduction-to-functional-programming-with-js/pure-functions)
+[Currying - 할인쿠폰 함수 만들기](https://www.codingame.com/playgrounds/2980/practical-introduction-to-functional-programming-with-js/currying)
