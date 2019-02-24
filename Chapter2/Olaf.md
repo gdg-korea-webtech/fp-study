@@ -374,3 +374,8 @@ getJSON(
 ## 1_week 문제
 
 [문제](https://stackblitz.com/edit/fp-1-week)
+
+## 2_week 문제
+
+1. Lense 만들어보기 (set, view 정도)
+2. deepClone 만들어보기
