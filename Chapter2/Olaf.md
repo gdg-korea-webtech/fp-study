@@ -370,3 +370,7 @@ getJSON(
   error => console.log(error)
 );
 ```
+
+## 1_week 문제
+
+[문제](https://stackblitz.com/edit/fp-1-week)
