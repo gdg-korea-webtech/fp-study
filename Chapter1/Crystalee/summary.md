@@ -93,6 +93,15 @@ var 메시지표현하기 = function 함수메이커(화면에표현, 태그생�
 
 ## 해결해야 할 질문
 
-- 커링? currying?
-- 리액티브 프로그래밍?
+- 커링? currying? [여기 참고](https://edykim.com/ko/post/writing-a-curling-currying-function-in-javascript/)
+  - 커링은 나중에 나올 때 더 자세하게 공부하면 되겠다
+- 리액티브 프로그래밍
 - declarative, evaluation -  선언적 / 평가 보다 더 와닿는 한국말이 없을까..
+  - 평가! 는 자바스크립트 코드 라인 하나가 각각 어떤 '실험'이라고 생각하고, 그것을 실제로 실행해봐서 결과를 '평가'하기 때문에 evaluation이라는 단어를 사용한다고 생각하면 좋다.
+
+---
+
+## 과제
+
+[현섭님 문제](https://github.com/gdg-korea-webtech/fp-study/blob/master/Chapter1/HyunSeob.md)
+[_.clone(value)](https://lodash.com/docs/4.17.11#clone)
