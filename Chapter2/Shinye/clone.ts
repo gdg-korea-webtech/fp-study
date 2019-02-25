@@ -1,26 +1,17 @@
 const clone = (original: any) => {
+  if (isTypeArray(original)) {
+    return [ ...original ];
+  }
   if (isTypeObject(original)) {
-    const clone = getObjectConstruct(original);
-    return cloneObject(original, clone);
+    return { ...original }
   }
   return original;
 };
 
-const isTypeObject = (value: any) => {
-  if (typeof value !== 'object') {
-    return false;
-  }
-  return true;
+const isTypeObject = (value: any) => {  
+  return typeof value === 'object' 
 };
 
-const getObjectConstruct = (value) => {
-  return value.constructor();  
-};
-
-const cloneObject = (original, clone) => {
-  for (const v in original) {
-    clone[v] = original[v];        
-  }
-
-  return clone;
-};
+const isTypeArray = (value: any) => {
+  return Array.isArray(value);
+}
