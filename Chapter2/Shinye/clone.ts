@@ -13,11 +13,11 @@ const isTypeObject = (value: any) => {
   return true;
 };
 
-const getObjectConstruct = (value: Object) => {
+const getObjectConstruct = (value) => {
   return value.constructor();  
 };
 
-const cloneObject = (original: Object, clone: Object) => {
+const cloneObject = (original, clone) => {
   for (const v in original) {
     clone[v] = original[v];        
   }
