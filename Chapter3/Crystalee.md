@@ -135,8 +135,8 @@ function filter(arr, prediate) {
     if (predicate(value, idx, this)) {
       result.push(value);
     }
-    return result;
   }
+  return result;
 }
 ```
 
