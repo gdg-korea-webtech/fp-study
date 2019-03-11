@@ -295,5 +295,5 @@ func('a')('b')('c')('d') => DCBA
 
 ## 저번주 문제풀이
 
-현섭님: 푸는중 ....
+현섭님: 푸는중는 실패 ...... https://stackblitz.com/edit/js-tx6v3u
 보람님: https://stackblitz.com/edit/fp-study-today-bpfbdm
