@@ -315,3 +315,7 @@ eqMedianAverage([81, 90, 100]); // -> False
 
 - 조합기를 쓰면 자유롭게 무인수 프로그래밍 가능.
 - 조합기는 순수하기 때문에 다른 조합기와 재합성이 가능함
+
+---
+ch3 문제
+[링크](https://stackblitz.com/edit/fp-study-today-nvhmge)
