@@ -296,4 +296,4 @@ func('a')('b')('c')('d') => DCBA
 ## 저번주 문제풀이
 
 현섭님: 푸는중 ....
-보람님: https://fp-study-today-bpfbdm.stackblitz.io
+보람님: https://stackblitz.com/edit/fp-study-today-bpfbdm
