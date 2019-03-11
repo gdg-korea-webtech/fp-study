@@ -399,8 +399,6 @@ eqMedianAverage([81, 90, 100])); //-> false
 >currying
 
 ```js
-//아래처럼 동작하도록 renderHtmlTag 작성
-
 renderDiv = renderHtmlTag('div')
 renderH1 = renderHtmlTag('h1')
 
@@ -408,4 +406,10 @@ console.log(
   renderDiv('this is a really cool div'),
   renderH1('and this is an even cooler h1')
 )
+
+/*  아래처럼 출력되도록 renderHtmlTag 작성
+
+    <div>this is a really cool div</div>
+    <h1>and this is an even cooler h1</h1>
+*/
 ```
