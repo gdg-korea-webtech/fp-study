@@ -269,6 +269,22 @@ function showStudent2() {
 }
 ```
 
+# Chapter 5. Conclusion
+
+> ![Functor](./images/robin-conclusion.png)
+>
+> ## Functor
+>
+> - You apply a function to a wrapped value.
+> - Functor is a type that implements map.
+> - Array implements map, so it’s a functor.
+>
+> ## Monad
+>
+> - You apply a function that returns a wrapped value, to a wrapped value.
+> - A monad is a type that implements flatMap.
+> - Promise implements map and flatMap through then, so it is a functor and a monad.
+
 > # Reference
 >
 > ## [What is a functor](https://medium.com/@dtinth/what-is-a-functor-dcf510b098b6)
@@ -276,5 +292,3 @@ function showStudent2() {
 > ## [Functor](http://functionaljavascript.blogspot.com/2013/07/functors.html)
 >
 > ## [Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html#functors)
->
-> ## [번역 - Functors, Applicatives, And Monads In Pictures](https://lazyswamp.tistory.com/entry/functorsapplicativesandmonadsinpictures)
