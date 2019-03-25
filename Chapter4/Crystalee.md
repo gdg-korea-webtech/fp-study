@@ -108,7 +108,7 @@ const Scheduler = (function() {
   // 2 - 위에서 바인딩할때 비워두었던 두개의 placeholder 모두 호출시에 받도록 다시 placeholder를 채워둔다.
   return {
     delay5: _.partial(delayedFn, _, 5000), // 1
-    delay: _partial(delayedFn, _, _), // 2
+    delay: _.partial(delayedFn, _, _), // 2
   }
 });
 
@@ -146,7 +146,7 @@ g:: A -> B
 f:: B -> C
 ```
 
-**compose 안에 들어가는 놈을 뒤에서부터 하나씩 실행함**
+**compose 안에 들어가는 놈을 뒤에서부터 하나씩 실행**한다.
 
 `f g = f(g) = compose :: ((B -> C), (A -> B)) -> (A -> C)`
 
@@ -231,7 +231,7 @@ showStudent('44444-44444 '); // -> 444-44-4444, Alonzo, Church
 
 함수 조합기(function combinator): 명령형 코드에서 `if-else`, `for`와 같은 절차적 제어 장치를 대체하여 함수형 코드에서 사용할 수 있는 대안
 
-**조합기**: 함수 또는 다른 조합기 같은 기본 장치를 조합하여 제어 로직처럼 작동시킬 수 있는 **고계함수**. 대부분 합수형 프로그램이 잘 흘러가도록 조정하는 역할을 한다. (e.g. `componse`, `pipe`, `identify`, `tab`, `alternation`, `sequence`, `fork`, `join`)
+**조합기**: 함수 또는 다른 조합기 같은 기본 장치를 조합하여 제어 로직처럼 작동시킬 수 있는 **고계함수**. 대부분 합수형 프로그램이 잘 흘러가도록 조정하는 역할을 한다. (e.g. `componse`, `pipe`, `identify`, `tap`, `alternation`, `sequence`, `fork`, `join`)
 
 ### `identify` (항등 - I 조합기)
 
@@ -239,11 +239,11 @@ showStudent('44444-44444 '); // -> 444-44-4444, Alonzo, Church
 
 주어진 인수와 똑같은 값을 반화하는 함수. argument를 받아서 어떤 동작을 수행하고 다시 같은 argument를 반환한다.
 
-### `tab` (탭 - K 조합기)
+### `tap` (탭 - K 조합기)
 
 코드 추가 없이 void형 함수를 연결하여 합성할 때 유용함(e.g. 로깅, 파일/HTML/페이지 쓰기 등). 자신을 함수에 넘기고 자신을 돌려받는다.
 
-`tab :: (a -> *) -> a -> a`
+`tap :: (a -> *) -> a -> a`
 
 ```javascript
 const debugLog = _.partial(logger, 'console', 'basic', 'MyLogger', 'DEBUG');
@@ -287,7 +287,7 @@ const seq = function(/*함수*/) {
 };
 ```
 
-정해진 일을 하나씩 차례로 수행하기는 하나, 값을 반환하지는 않는다. seq를 중간에 쓰고싶다면 tab 나머지 함수와 연결하면 된다.
+정해진 일을 하나씩 차례로 수행하기는 하나, 값을 반환하지는 않는다. seq를 중간에 쓰고싶다면 tap 나머지 함수와 연결하면 된다.
 
 ### `fork` (포크|조인 조합기)
 
