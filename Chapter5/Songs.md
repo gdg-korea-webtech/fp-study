@@ -249,7 +249,11 @@ showStudent(studentId).run(); //-> 444-44-4444, Songs, Hello
  
 ---
 
-### Reference
+### 꿀단지
+
+[FP](https://github.com/leandrotk/functional-programming-learning-path)
+
+### Monad Reference
 - [monad 그림으로 이해하기](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html#monads)
 - [basic-monads-in-javascript](https://dev.to/rametta/basic-monads-in-javascript-3el3)
 - [functors-monads-and-promises](https://dev.to/joelnet/functional-javascript---functors-monads-and-promises-1pol)
