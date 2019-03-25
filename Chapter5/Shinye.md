@@ -166,4 +166,4 @@ Promise는 기본적인 continuation 모나드에 여러가지 확장을 제공�
 
 ### FP 스터디 시 참고될만한 자료들
 
-http://caiorss.github.io/Functional-Programming/ <br />https://github.com/hemanth/functional-programming-jargon <br />
+[https://github.com/MostlyAdequate/mostly-adequate-guide](https://github.com/MostlyAdequate/mostly-adequate-guide)<br />http://caiorss.github.io/Functional-Programming/ <br />https://github.com/hemanth/functional-programming-jargon <br />
