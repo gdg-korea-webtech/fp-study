@@ -214,3 +214,22 @@ JSCheck 구성 요소
 - 순수함수에 기반을 두 모듈적인 코드는 테스트기 쉽고 속성 기반 테스트처럼 더 엄격한 테스트 방법론을 적용할 수 있습니다.
 - 제어 흐름이 직관적이어야 합니다.
 - 제어 흐름이 단순해지면 복잡도가 줄어듭니다. 복잡도는 지표를 통해 정량적으로 측정할 수 있습니다.
+
+## 문제
+
+> either Monad 기반의 미니 Promise 를 만들어보자 (left, rigth 가 resolve reject 느낌이라서 )
+
+1. API call
+2. name 이 받은 인자로 시작하는 pokemon 만 필터링
+3. 필터링된 pokmon 의 legnth
+4. test
+
+```js
+const result = Monad.map(fetch)
+  .map(filter(str))
+  .map(count);
+
+assert(result, 3);
+```
+
+- https://pokeapi.co/api/v2/pokemon/
