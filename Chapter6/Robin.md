@@ -151,3 +151,13 @@
 >
 > - input : 3 + 4 + 3 =
 > - output: 10
+>
+> case 3)
+>
+> - input : -3 + -4 + -3 =
+> - output: -10
+>
+> case 4)
+>
+> - input : -3 +3 =
+> - output: 0
