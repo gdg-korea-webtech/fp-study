@@ -1,6 +1,6 @@
 > # 문제풀이
 >
-> js-validation
+> [js-validation](https://stackblitz.com/edit/fp-study-week-06-js-validation)
 
 # Chapter 6. 빈틈없는 코드 만들기
 
@@ -138,7 +138,16 @@
   - `M(복잡도)` = `E(간선 갯수)` - `N(노드나 블록 갯수)` + `P(출구 잇는 노드의 갯수)`
 
 > 오늘의 문제
-
-```
-
-```
+> [링크](https://stackblitz.com/edit/fp-study-week-07)
+>
+> 테스트하기 좋게 코드를 리팩토링하고, 다음 테스트 케이스를 검증하세요.
+>
+> case 1)
+>
+> - input : 0 +=
+> - output: 0
+>
+> case 2)
+>
+> - input : 3 + 4 + 3 =
+> - output: 10
