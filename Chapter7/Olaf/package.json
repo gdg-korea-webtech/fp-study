@@ -1,0 +1,20 @@
+{
+  "name": "Olaf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "concurrently \"node server.js\" \"cypress open\""
+  },
+  "keywords": [],
+  "author": "olaf <appear.ko@gmail.com> (=)",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cypress": "^3.2.0"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-static": "^5.0.0"
+  }
+}
