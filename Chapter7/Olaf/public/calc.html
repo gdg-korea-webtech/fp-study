@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        font-family: Lato;
+      }
+      #history,
+      #result {
+        max-width: 300px;
+        min-height: 20px;
+        margin-bottom: 8px;
+        border-bottom: solid 1px crimson;
+      }
+
+      .header {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="header">
+        <div id="history"></div>
+        <div id="result"></div>
+      </div>
+      <div class="body">
+        <div id="control">
+          <input id="number-input" type="number" value="0" />
+          <button id="btn-add" type="button">+</button>
+          <button id="btn-result" type="button">=</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Write Javascript code!
+      const appDiv = document.getElementById("app");
+      const history = document.getElementById("history");
+      const input = document.getElementById("number-input");
+      const btnAdd = document.getElementById("btn-add");
+      const btnResult = document.getElementById("btn-result");
+      const result = document.getElementById("result");
+
+      btnAdd.onclick = function() {
+        printHistory("+");
+        clearInput();
+      };
+
+      btnResult.onclick = function() {
+        printHistory("=");
+        clearInput();
+        printResult();
+      };
+
+      input.onkeyup = function() {
+        if (result.innerHTML.length) clearAll();
+        const status = this.value.length > 0;
+        updateBtnStatus([btnAdd, btnResult], !status);
+      };
+
+      function clearAll() {
+        result.innerHTML = "";
+        history.innerHTML = "";
+      }
+
+      function printResult() {
+        const expression = history.innerHTML;
+        const sum = expression
+          .trim()
+          .split(" ")
+          .reduce((accumulator, currentValue, currentIndex) => {
+            return (accumulator +=
+              currentIndex % 2 ? 0 : parseInt(currentValue));
+          }, 0);
+        result.innerHTML = sum;
+      }
+
+      function clearInput() {
+        input.value = "";
+        updateBtnStatus([btnAdd, btnResult], true);
+      }
+
+      function updateBtnStatus(targets, status) {
+        targets.map(target => (target.disabled = status));
+      }
+
+      function printHistory(operator) {
+        const template =
+          operator === "=" ? `${input.value} = ` : `${input.value} + `;
+        history.innerHTML += template;
+      }
+    </script>
+  </body>
+</html>
