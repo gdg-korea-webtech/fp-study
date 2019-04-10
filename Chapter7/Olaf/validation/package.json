@@ -1,0 +1,37 @@
+{
+  "name": "validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.7.1",
+    "jest-mock-console": "^0.4.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
+  }
+}
