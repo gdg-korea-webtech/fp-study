@@ -1,3 +1,9 @@
+Quiz)
+
+- 팩토리얼을 메모이제이션으로 구현해보자	[링크](https://github.com/FEDevelopers/tech.description/wiki/%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
+
+
+
 # 함수형 최적화
 
 함수형 프로그래밍은 개별 함수의 평가 속도를 올리기 보다는, 주로 함수 중복 호출을 피해서 코드가 정말 필요할 때 까지 평가를 지연시키는 전략을 구사한다.
@@ -117,11 +123,4 @@
 - 함수 콘텍스트에서 상태 값은 대부분 인수 형태로 다음 함수에 넘긴다.
 
   - 이러한 재귀를 반복하면 스택에 새 프레임이 쌓이지 않고 이전에 쓴 프레임을 재활용 가능하다.
-
-
-
-Quiz)
-
-- 팩토리얼을 메모이제이션으로 구현해보자	
-  - https://github.com/FEDevelopers/tech.description/wiki/%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81%EC%9D%84-%EC%9C%84%ED%95%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%A9%94%EB%AA%A8%EC%9D%B4%EC%A0%9C%EC%9D%B4%EC%85%98-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
 
