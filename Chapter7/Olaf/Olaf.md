@@ -223,7 +223,10 @@ const factorial = (n, current = 1) =>
 - 컨텍스트 스택 사용까지 최적화하기 위해 메모화를 활용하세요
 - 꼬리 재귀 함수로 바꾸면 꼬리 호출 최적화라는 컴파일러 확장 기능을 활용할 여지가 생깁니다.
 
-
-### 문제 
+### 문제
 
 api call 을 캐싱할 수 있는 memoize 를 만들어보자
+
+```text
+"https://pokeapi.co/api/v2/pokemon/1/" ~ 20 번까지의 api 가 있다.
+```
