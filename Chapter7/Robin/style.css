@@ -1,0 +1,15 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+#history,
+#result {
+  max-width: 300px;
+  min-height: 20px;
+  margin-bottom: 8px;
+  border-bottom: solid 1px crimson;
+}
+
+.header {
+  display: flex;
+}
