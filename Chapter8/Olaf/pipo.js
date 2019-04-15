@@ -1,5 +1,5 @@
 const memoize = fn => {
-  let cache = {};
+  const cache = {};
   return num => {
     if (cache[num]) {
       console.log(`cache: ${cache[num]}`);
