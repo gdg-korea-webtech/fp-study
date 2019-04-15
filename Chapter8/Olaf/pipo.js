@@ -5,7 +5,7 @@ const memoize = fn => {
       console.log(`cache: ${cache[num]}`);
       return cache[num];
     } else {
-      let result = fn(num);
+      const result = fn(num);
       cache[num] = result;
       return result;
     }
